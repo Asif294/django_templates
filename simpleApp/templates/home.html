@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo</title>
+  </head>
+  <body>
+    <h1>Name : {{Name}}</h1>
+    <h1>length :{{ list | length }}</h1>
+    <h1>add :{{ 321 | add:"2" }}</h1>
+    <h1>addslashes :{{ "I’m Jai" | addslashes }}</h1>
+    <h1>capfirst :{{ "jai" | capfirst }}</h1>
+    <h1>capfirst :{{ val | center:"15" }}</h1>
+    <h1>cut : {{'This is our cuntry'| cut:" "  }}</h1>
+    <h1>date : {{ Birthday | date:"D d M Y"}}</h1>
+    <h1>date : {{ Birthday | date:"D d M Y"}}</h1>
+    <h1>default: {{""| default:"nothing"}}</h1>
+    <h1>dictsort: {{con | dictsort:"name"}}</h1>
+    <h1>divition: {{13 | divisibleby:"3"}}</h1>
+    <h1>Escape: {{ title | escape }}</h1>
+    <h1>filesizeformat: {{kb | filesizeformat }}</h1>
+    <h1>first: {{ fir | first }}</h1>
+    <h1>join: {{  fir | join:" // "}}</h1>
+    <h1>last : {{ fir | last}}</h1>
+    <h1>linenumbers : {{"cat\dog\goat" | linenumbers}}</h1>
+    <h1>lower: {{ 'This Is Our BD' | lower }}</h1>
+    <h1>lower: {{ 123 | make_list }}</h1>
+    <h1>Random: {{ fir | random }}</h1>
+    <h1>Slice: {{ fir | slice:":2" }}</h1>
+    <h1>Slice: {{ "Computer Science and Technology" | slugify }}</h1>
+    <h1>Time: {{ now | time:"H:i"  }}</h1>
+    <h1>title: {{ 'my First post' | title }}</h1>
+    <h1>UnorderList: {{ li | unordered_list}}</h1>
+    <h1>Upper: {{ Name | upper}}</h1>
+    <h1>world count : {{ 'can i get an amlate ' | wordcount}}</h1>
+  
+
+    {% for i in list %}
+       <h1>{{i}}</h1>
+    {% endfor %}
+    
+    {% comment %}  {% endcomment %}
+    
+    {% if data == 99 %}
+  Value in data is : - {{ data }}
+  {% else %}
+  Data is empty
+  {% endif%}
+   
+    {% lorem 1 %}
+
+ 
+
+
+  </body>
+</html>
